@@ -26,10 +26,10 @@ const Navbar = () => {
         </div>
         <nav className='navbar'>
           <ul className={navbar ? 'nav_list active' : 'nav_list'}>
-            <li><Link to='/'>home</Link></li>
-            <li><Link to='/recovery'>recovery</Link></li>
-            <li><Link to='/cloud'>cloud</Link></li>
-            <li><Link to='/contact'>contact</Link></li>
+            <li><Link to='/' onClick={handleNavbar}>home</Link></li>
+            <li><Link to='/recovery' onClick={handleNavbar}>recovery</Link></li>
+            <li><Link to='/cloud' onClick={handleNavbar}>cloud</Link></li>
+            <li><Link to='/contact' onClick={handleNavbar}>contact</Link></li>
           </ul>
         </nav>
         <button className='btn'>Sign in</button>

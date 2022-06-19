@@ -1,0 +1,131 @@
+.footer {
+  width: 100%;
+  min-height: 55vh;
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.footer::before {
+  content: "";
+  background: url("../../assets/footer-bg.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.footer .top_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.footer .bacKTop {
+  position: fixed;
+  color: var(--primary-color);
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer .bacKTop.active {
+  opacity: 1;
+}
+
+.footer .footer_logo {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+.footer .footer_logo .icon {
+  margin-right: 0.8rem;
+  color: var(--primary-color);
+  font-size: 3.4rem;
+}
+
+.footer .col_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  justify-content: center;
+  padding: 1.5rem 0;
+  gap: 3rem;
+}
+
+.footer .col_container .col h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer .col_container .col ul li a {
+  display: inline-block;
+  color: #111;
+  margin: 1rem 0;
+}
+.footer .col_container .col ul li a:hover {
+  color: var(--primary-color);
+}
+
+.footer .col_container .col .filed_block {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.footer .col_container .col .filed_block .email {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.7rem;
+  border: 1px solid #888;
+  border-radius: 0.4rem;
+  color: #222;
+  caret-color: var(--primary-dark);
+}
+
+.footer .col_container .col .filed_block .email:focus {
+  color: #333;
+  outline: var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-dark);
+}
+
+.footer .col_container .col .filed_block .email_icon {
+  position: absolute;
+  right: 1rem;
+  font-size: 2.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.footer .col_container .col .social_link {
+  margin: 1rem 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .col_container .col .social_link a {
+  background-color: var(--primary-dark);
+  padding: 1rem;
+  color: #fff;
+  font-size: 2.4rem;
+  display: flex;
+  border-radius: 0.4rem;
+}
+.footer .col_container .col .social_link a:hover {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .footer .col_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .col_container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+:root {
+  --primary-color: #0fb8e0;
+  --primary-dark: #0d2154;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+a {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+.text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  padding: 2rem 0;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1rem 2.6rem;
+  border-radius: 0.4rem;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: #188ea8;
+}
+
+.blue {
+  color: var(--primary-color);
+}
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width:768px){
+  .bg_glass {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+  }
+}

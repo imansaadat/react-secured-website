@@ -1,0 +1,30 @@
+.data {
+  width: 100%;
+  height: 100vh;
+  background: url("../../assets/data-bg.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.data::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.data .data_content {
+  width: 50%;
+  position: relative;
+  top: 35%;
+  left: 50%;
+}
+
+@media (max-width: 768px) {
+  .data .data_content {
+    left: 0;
+    width: 100%;
+  }
+}

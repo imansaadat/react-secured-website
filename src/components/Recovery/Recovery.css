@@ -1,0 +1,28 @@
+.recovery {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.recovery::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url("../../assets/recovery-bg.png") no-repeat center center/cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.recovery .recovery_content {
+  color: #fff;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .recovery .recovery_content {
+    width: 100%;
+  }
+}
